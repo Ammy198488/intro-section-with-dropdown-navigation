@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:wght@500;700&display=swap');
+
+$AlmostWhite: hsl(0, 0%, 98%); 
+$MediumGray: hsl(0, 0%, 41%) ;
+$AlmostBlack: hsl(0, 0%, 8%);
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Epilogue', sans-serif;
+    font-size: 18px;
+}
+
+.logo{
+    width: 60px;
+    padding-top: 10px;
+}
+p, li{
+    color: $MediumGray !important;
+}
+li:hover{
+    color: $AlmostBlack !important;
+    cursor: grabbing !important;
+}
+section{
+    h1{
+        font-weight: 700;
+        font-size: 3.3rem;
+        padding-top: 20px;
+    }
+    .desktop{
+        width: 100%;
+        max-width: 500px;
+        max-height: 400px;
+        object-fit: contain;
+    }
+    .mobile {
+        display: none;
+    }
+}
+button{
+    outline: none !important;
+}
+button:hover{
+    cursor: grabbing !important;
+    background-color: transparent !important;
+    color: $AlmostBlack !important;
+}
+.content-section{
+    display: flex !important;
+    justify-content: space-between !important;
+    align-items: center !important;
+}
+@media only screen and (max-width: 768px ) {
+    .logo {
+        width: 100px;
+    }
+    .content-section{
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: center;
+        .mobile{
+            display: block;
+        }
+        h1{
+        font-size: 2.3rem;
+        padding: 10% 0px 5% 0 !important;
+        text-align: center;
+        }
+        p{
+            text-align: center;
+            padding-bottom: 5%;
+        }
+        button{
+            margin-left: 35%;
+        }
+        .lower{
+            display: grid !important;
+            grid-template-columns: 1fr 1fr 1fr 1fr !important;
+        }
+        .lower img{
+            max-width: 100px;
+            width: 100%;
+        }
+        .desktop {
+            display: none;
+        }
+    }
+}
