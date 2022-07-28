@@ -1,3 +1,7 @@
+[![Netlify Status](https://api.netlify.com/api/v1/badges/285c638b-1e13-48ee-a01a-8b363e8e1d8f/deploy-status)](https://app.netlify.com/sites/frontend-mentor-intro-section-with-dropdown-navigation/deploys)
+
+live link : https://frontend-mentor-intro-section-with-dropdown-navigation.netlify.app/
+
 # Frontend Mentor - Intro section with dropdown navigation
 
 ![Design preview for the Intro section with dropdown navigation coding challenge](./design/desktop-preview.jpg)
